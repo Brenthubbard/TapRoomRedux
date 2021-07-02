@@ -19,7 +19,7 @@ function NewKegForm(props) {
 
   return (
     <React.Fragment>
-      <form onSubmit={handleNewTicketFormSubmission}>
+      <form onSubmit={handleNewKegFormSubmission}>
         <input
           type='text'
           name='name'

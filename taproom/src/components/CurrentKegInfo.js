@@ -12,7 +12,7 @@ function Keg(props) {
   );
 }
 
-Ticket.propTypes = {
+Keg.propTypes = {
   name: PropTypes.string.isRequired,
   brand: PropTypes.string,
   price: PropTypes.string,
