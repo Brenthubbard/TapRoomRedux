@@ -36,7 +36,7 @@ function NewKegForm(props) {
           type='text'
           name='alcoholContent'
           placeholder='AlcoholContent' />
-        <textarea
+        <input
           name='pintsLeft'
           placeholder='Pints left in Keg' />
         <button type='submit'>Add Keg to List</button>
