@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-<img src="../taproom Diagram.png">
+<img src="../taproom/Taproom Diagram.png">
 =======
 
 >>>>>>> a8b9c479bac5161133bf8864ff0b77f07e7d7dbb
