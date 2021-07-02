@@ -1,7 +1,7 @@
 # Getting Started with Create React App
-<img src="../taproom/img/Taproom Diagram.png">
 =======
 
+<img src = "../taproom/img/TaproomDiagram.png">
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
