@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-<img src="../img/Taproom Diagram.png">
+<img src="../taproom/img/Taproom Diagram.png">
 =======
 
 
