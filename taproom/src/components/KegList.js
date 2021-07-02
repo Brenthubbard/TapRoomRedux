@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 function KegList(props) {
   return (
     <React.Fragment>
-      <hr />
+      {/* <hr /> */}
       {props.kegList.map((keg, index) =>
         <Keg name={keg.name}
           brand={keg.brand}
