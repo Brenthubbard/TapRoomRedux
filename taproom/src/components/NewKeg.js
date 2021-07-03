@@ -1,18 +1,21 @@
 import React from "react";
-import { v4 } from 'uuid'; 
+import { v4 } from 'uuid';
 import PropTypes from "prop-types";
+// import ReusableForm from "./ReusableForm";
 
 function NewKegForm(props) {
+  const keg = {};
+  keg.id = v4();
 
-  
   function handleNewKegFormSubmission(event) {
     event.preventDefault();
+   
     props.onNewKegCreation({
       name: event.target.name.value,
       brand: event.target.brand.value,
       price: event.target.price.value,
       alcoholContent: event.target.alcoholContent.value,
-      pintsLeft: event.target.pintsLeft.value,
+      pint: 124,
       id: v4()
     });
   }
