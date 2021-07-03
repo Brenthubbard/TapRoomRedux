@@ -2,8 +2,8 @@
 =========================================
 
 
-<img src = "../Taproom Diagram.png">
-
+<img src ="./Taproom Diagram.png" > 
+<!-- alt="diagram of react component tree"/> -->
 
 <!-- <img src="TapRoom/taproom/img/TaproomDiagram.png"> -->
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
