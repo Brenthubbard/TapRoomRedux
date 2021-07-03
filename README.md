@@ -3,10 +3,12 @@
 
 
 <img src ="./Taproom Diagram.png" > 
-<!-- alt="diagram of react component tree"/> -->
 
-<!-- <img src="TapRoom/taproom/img/TaproomDiagram.png"> -->
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App]
+
+## Project Description
+
+This project allows the user to add Keg information to a Keg ticket and load that to a list that can be reviewed.
 
 ## Available Scripts
 
@@ -74,3 +76,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+Created By Brent Hubbard
+Contact hubbardbrent@hotmail.com
