@@ -3,19 +3,19 @@ import PropTypes from "prop-types";
 
 function KegDetails(props) {
 
-  const { KegDetails, onClickingDelete, onClickingEdit, onSubtractPint } = props;
+  const { KegDetails, onClickingDelete, onClickingEdit, onSubtractPint, Keg } = props;
 
   return (
     <React.Fragment>
-      <p><em>Name of Bev = {props.Keg.name}</em></p>
-      <h3>Brand of Bev = {props.Keg.brand} </h3>
-      <h3>Price of Bev = {props.Keg.price}</h3>
-      <h3>Alcohol Content of Bev = {props.Keg.ac}</h3>
-      <h3>Pints Left in Keg = {props.Keg.pint}</h3>
+      <p><em>Name of Bev = {Keg.name}</em></p>
+      <h3>Brand of Bev = {Keg.brand} </h3>
+      <h3>Price of Bev = {Keg.price}</h3>
+      <h3>Alcohol Content of Bev = {Keg.ac}</h3>
+      <h3>Pints Left in Keg = {Keg.pint}</h3>
 
 
-      <button onClick={() => onClickingDelete(KegDetails.id)}>Remove Item</button>
-      <button onClick={() => onSubtractPint(KegDetails.id)}>Purchased Pint</button>
+      <button onClick={() => onClickingDelete(Keg.id)}>Remove Item</button>
+      <button onClick={() => onSubtractPint(Keg.id)}>Purchased Pint</button>
       <button onClick={() => onClickingEdit(KegDetails.id)}>Edit Keg Details</button>
 
       <hr />
