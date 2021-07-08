@@ -10,12 +10,12 @@ function KegDetails(props) {
       <p><em>Name of Bev = {Keg.name}</em></p>
       <h3>Brand of Bev = {Keg.brand} </h3>
       <h3>Price of Bev = {Keg.price}</h3>
-      <h3>Alcohol Content of Bev = {Keg.ac}</h3>
+      <h3>Alcohol Content of Bev = {Keg.alcoholContent}</h3>
       <h3>Pints Left in Keg = {Keg.pint}</h3>
 
 
       <button onClick={() => onClickingDelete(Keg.id)}>Remove Item</button>
-      <button onClick={() => onSubtractPint(Keg.id)}>Purchased Pint</button>
+      <button onClick={() => onSubtractPint(Keg.id)}>Sell Pint</button>
       <button onClick={() => onClickingEdit(Keg.id)}>Edit Keg Details</button>
 
       <hr />
