@@ -3,22 +3,33 @@ import tapRoomReducer from '../../reducers/tapRoom-reducer';
 
 describe('tapRoom-reducer', () => {
 
+  const currentState = {
+  
+      1: {
+        name: 'Kokanee',
+        brand: 'Super awesome',
+        price: 5,
+        alcoholContent: 15,
+        id: 1
+      },
+      2: {
+        name: 'Kokanee Gold',
+        brand: 'WOW! awesome',
+        price: 12,
+        alcoholContent: 35,
+        id: 2
+      }
+    };
+  
   let action;
   const kegData = {
-    1: {
       name: 'Kokanee',
       brand: 'Super awesome',
       price: 5,
       alcoholContent: 15,
       id: 1
-    },
-    2: {
-      name: 'Kokanee Gold',
-      brand: 'WOW! awesome',
-      price: 12,
-      alcoholContent: 35,
-      id: 2
-    }
+    
+    
   };
 
   test('should return default state if there is no action type passed into the reducer', () => {
@@ -50,7 +61,7 @@ describe('tapRoom-reducer', () => {
   });
 
 
-  
+
   test('Should successfully delete a Keg', () => {
     action = {
       type: 'DELETE_KEG',
