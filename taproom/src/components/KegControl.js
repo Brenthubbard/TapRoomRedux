@@ -52,8 +52,13 @@ class KegControl extends React.Component {
   }
 
   handleDeletedKeg = (id) => {
-    const newMasterKegList = this.state.masterKegList.filter(Keg => Keg.id !== id);
-    this.setState({ masterKegList: newMasterKegList, selectedKeg: null });
+    const { dispatch } = this.props;
+    const action = {
+      type: 'DELETE_KEG',
+      id: id
+    }
+    dispatch(action);
+    this.setState({ selectedKeg: null });
   }
 
 
@@ -63,11 +68,18 @@ class KegControl extends React.Component {
 
 
   handleEditingKegInList = (kegToEdit) => {
-    const editedMasterKegList = this.setState.masterKegList
-      .filter(Keg => Keg.id !== this.state.selectedKeg.id)
-      .concat(kegToEdit);
-    this.state({
-      masterKegList: editedMasterKegList,
+    const { dispatch } = this.props;
+    const { id, names, brand, price, alcoholContent } = kegToEdit;
+    const action = {
+      type: 'ADD_TICKET',
+      id: id,
+      names: names,
+      brand: brand,
+      price: price,
+      alcoholContent:  alcoholContent
+    }
+    dispatch(action);
+    this.setState({
       editing: false,
       selectedKeg: null
     });
@@ -113,6 +125,14 @@ class KegControl extends React.Component {
     );
   }
 }
-KegControl = connect()(KegControl);
+
+
+
+const mapStateToProps = state => {
+  return {
+    masterKegList: state
+  }
+}
+KegControl = connect(mapStateToProps)(KegControl);
 
 export default KegControl;
