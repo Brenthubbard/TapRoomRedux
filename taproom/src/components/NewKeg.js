@@ -1,7 +1,7 @@
 import React from "react";
 import { v4 } from 'uuid';
 import PropTypes from "prop-types";
-// import ReusableForm from "./ReusableForm";
+import ReusableForm from "./ReusableForm";
 
 function NewKegForm(props) {
   const keg = {};
@@ -39,10 +39,10 @@ function NewKegForm(props) {
           type='number'
           name='alcoholContent'
           placeholder='AlcoholContent' />
-        <input
+        {/* <input
           type='number'
           name='pintsLeft'
-          placeholder='Pints left in Keg' />
+          placeholder='Pints left in Keg' /> */}
         <button type='submit'>Add Keg to List</button>
         <button type=''>Return to List</button>
 
@@ -51,8 +51,8 @@ function NewKegForm(props) {
   );
 }
 NewKegForm.propTypes = {
-  onNewKegCreation: PropTypes.func
-};
+  onNewKegCreation: PropTypes.func,
+}; 
 
 
 export default NewKegForm;
