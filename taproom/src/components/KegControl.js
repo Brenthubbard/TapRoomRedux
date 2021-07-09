@@ -4,6 +4,9 @@ import KegList from './KegList';
 import KegDetails from "./KegDetails";
 import EditForm from "./EditForm";
 import { connect } from 'react-redux';
+import PropTypes from "prop-types";
+
+
 
 class KegControl extends React.Component {
 
@@ -47,7 +50,7 @@ class KegControl extends React.Component {
     this.setState({ formVisibleOnPage: false });
   }
   handleChangingSelectedKeg = (id) => {
-    const selectedKeg = this.state.masterKegList.filter(Keg => Keg.id === id)[0];
+    const selectedKeg = this.props.masterKegList[id];
     this.setState({ selectedKeg: selectedKeg });
   }
 
@@ -114,7 +117,7 @@ class KegControl extends React.Component {
       currentVisibleState = <NewKeg onNewKegCreation={this.handleAddingToList} />;
 
     } else {
-      currentVisibleState = <KegList kegList={this.state.masterKegList} onKegSelection={this.handleChangingSelectedKeg} />;
+      currentVisibleState = <KegList kegList={this.props.masterKegList} onKegSelection={this.handleChangingSelectedKeg} />;
       buttonText = "Create New Keg";
     }
     return (
@@ -126,7 +129,9 @@ class KegControl extends React.Component {
   }
 }
 
-
+KegControl.propTypes = {
+  masterKegList: PropTypes.object
+};
 
 const mapStateToProps = state => {
   return {
